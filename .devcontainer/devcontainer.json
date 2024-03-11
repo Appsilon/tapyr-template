@@ -3,7 +3,7 @@
 {
 	"name": "Python 3",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/python:3.12-bullseye",
+	"image": "mcr.microsoft.com/devcontainers/python:3.10-bullseye",
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	"features": {
@@ -15,6 +15,7 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
+	// We install playwright this way to make browsers available for python playwright
 	"postCreateCommand": "poetry install && npm init playwright@latest && npx playwright install --with-deps",
 
 	// Configure tool-specific properties.
