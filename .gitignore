@@ -1,2 +1,9 @@
 __pycache__
+
+# Results of playwright tests with tracing
 test-results/
+
+# Files from playwright installed with npm
+node_modules
+package-lock.json
+package.json

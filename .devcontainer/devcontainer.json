@@ -16,6 +16,7 @@
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// We install playwright this way to make browsers available for python playwright
+	// When running playwright install from python installation something breaks in devcontainer setup
 	"postCreateCommand": "poetry install && npm install playwright && npx playwright install --with-deps",
 
 	// Configure tool-specific properties.
