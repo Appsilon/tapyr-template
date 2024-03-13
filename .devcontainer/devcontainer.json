@@ -27,7 +27,8 @@
 				"ms-toolsai.jupyter",
 				"charliermarsh.ruff",
 				"streetsidesoftware.code-spell-checker",
-				"tamasfe.even-better-toml"
+				"tamasfe.even-better-toml",
+				"ryanluker.vscode-coverage-gutters"
 			]
         }
     }

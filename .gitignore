@@ -1,5 +1,9 @@
 __pycache__
 
+# Code coverage
+lcov.info
+.coverage
+
 # Results of playwright tests with tracing
 test-results/
 
