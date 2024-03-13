@@ -6,12 +6,17 @@ authors = ["Piotr Pasza Storozenko <piotr@appsilon.com>"]
 readme = "README.md"
 packages = [{include = "pyshiny_template"}]
 
+[tool.coverage.run]
+source = ["pyshiny_template"]
+
 [tool.poetry.dependencies]
 python = "^3.10"
 shiny = "^0.8.1"
 pandas = "^2.2.1"
 rich = "^13.7.1"
 loguru = "^0.7.2"
+pytest-watch = "^4.2.0"
+pytest-cov = "^4.1.0"
 
 [tool.poetry.group.dev.dependencies]
 icecream = "^2.1.3"
@@ -29,3 +34,6 @@ tenacity = "^8.2.3"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+addopts = "--cov . --cov-report=lcov:lcov.info --cov-report=term"
