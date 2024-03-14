@@ -1,19 +1,18 @@
-name: 'Test App E2E'
-on: # rebuild any PRs and main branch changes
+name: 'Test PyShiny App'
+on:
   pull_request:
   push:
     branches:
       - main
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
     steps:
-
       - name: Checkout (GitHub)
         uses: actions/checkout@v3
 
       - name: Build and run dev container tests
         uses: devcontainers/ci@v0.3
         with:
-          runCmd: poetry run pytest
+          runCmd: ./run_tests_and_bandit.sh

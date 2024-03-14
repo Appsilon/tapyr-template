@@ -12,7 +12,7 @@ APP_URL = f"http://{APP_HOST}:{APP_PORT}"
 
 @retry(wait=wait_fixed(0.5), stop=stop_after_delay(10))
 def wait_for_server_to_start(url):
-    response = requests.get(url)
+    response = requests.get(url)  # noqa: S113
     response.raise_for_status()  # Will raise an exception if the request is unsuccessful, i.e. server is not ready
 
 
