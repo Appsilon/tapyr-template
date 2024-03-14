@@ -1,10 +1,26 @@
-from pyshiny_template.utils.utils import square
+import pytest
+
+from pyshiny_template.utils.utils import divide
+from tests.utils.test_helpers import log_contain_message
 
 
-def test_square():
+def test_divide():
     # Given
     x = 2
+    y = 2
+    expected = 1
     # When
-    result = square(x)
+    result = divide(x, y)
     # Then
-    assert result == 4
+    assert result == expected
+
+
+def test_divide_by_zero(loguru_sink):
+    # Given
+    x = 2
+    y = 0
+    # When
+    with pytest.raises(ZeroDivisionError):
+        divide(x, y)
+    # Then
+    assert log_contain_message(loguru_sink, "ZeroDivisionError: division by zero")

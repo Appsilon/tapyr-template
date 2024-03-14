@@ -17,6 +17,7 @@ rich = "^13.7.1"
 loguru = "^0.7.2"
 pytest-watch = "^4.2.0"
 pytest-cov = "^4.1.0"
+pydantic-settings = "^2.2.1"
 
 [tool.poetry.group.dev.dependencies]
 icecream = "^2.1.3"

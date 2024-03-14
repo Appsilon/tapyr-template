@@ -1,2 +1,6 @@
-def square(x):
-    return x**2
+from loguru import logger
+
+
+@logger.catch(reraise=True)
+def divide(x, y):
+    return x / y
