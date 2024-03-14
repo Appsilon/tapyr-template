@@ -31,6 +31,7 @@ playwright = "^1.42.0"
 pytest-playwright = "^0.4.4"
 requests = "^2.31.0"
 tenacity = "^8.2.3"
+bandit = "^1.7.8"
 
 [build-system]
 requires = ["poetry-core"]

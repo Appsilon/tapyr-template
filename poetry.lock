@@ -91,6 +91,30 @@ astroid = ["astroid (>=1,<2)", "astroid (>=2,<4)"]
 test = ["astroid (>=1,<2)", "astroid (>=2,<4)", "pytest"]
 
 [[package]]
+name = "bandit"
+version = "1.7.8"
+description = "Security oriented static analyser for python code."
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "bandit-1.7.8-py3-none-any.whl", hash = "sha256:509f7af645bc0cd8fd4587abc1a038fc795636671ee8204d502b933aee44f381"},
+    {file = "bandit-1.7.8.tar.gz", hash = "sha256:36de50f720856ab24a24dbaa5fee2c66050ed97c1477e0a1159deab1775eab6b"},
+]
+
+[package.dependencies]
+colorama = {version = ">=0.3.9", markers = "platform_system == \"Windows\""}
+PyYAML = ">=5.3.1"
+rich = "*"
+stevedore = ">=1.20.0"
+
+[package.extras]
+baseline = ["GitPython (>=3.1.30)"]
+sarif = ["jschema-to-python (>=1.2.3)", "sarif-om (>=1.0.4)"]
+test = ["beautifulsoup4 (>=4.8.0)", "coverage (>=4.5.4)", "fixtures (>=3.0.0)", "flake8 (>=4.0.0)", "pylint (==1.9.4)", "stestr (>=2.5.0)", "testscenarios (>=0.5.0)", "testtools (>=2.3.0)"]
+toml = ["tomli (>=1.1.0)"]
+yaml = ["PyYAML"]
+
+[[package]]
 name = "certifi"
 version = "2024.2.2"
 description = "Python package for providing Mozilla's CA Bundle."
@@ -1083,6 +1107,17 @@ qa = ["flake8 (==3.8.3)", "mypy (==0.782)"]
 testing = ["docopt", "pytest (<6.0.0)"]
 
 [[package]]
+name = "pbr"
+version = "6.0.0"
+description = "Python Build Reasonableness"
+optional = false
+python-versions = ">=2.6"
+files = [
+    {file = "pbr-6.0.0-py2.py3-none-any.whl", hash = "sha256:4a7317d5e3b17a3dccb6a8cfe67dab65b20551404c52c8ed41279fa4f0cb4cda"},
+    {file = "pbr-6.0.0.tar.gz", hash = "sha256:d1377122a5a00e2f940ee482999518efe16d745d423a670c27773dfbc3c9a7d9"},
+]
+
+[[package]]
 name = "pexpect"
 version = "4.9.0"
 description = "Pexpect allows easy control of interactive console applications."
@@ -1989,6 +2024,20 @@ anyio = ">=3.4.0,<5"
 full = ["httpx (>=0.22.0)", "itsdangerous", "jinja2", "python-multipart (>=0.0.7)", "pyyaml"]
 
 [[package]]
+name = "stevedore"
+version = "5.2.0"
+description = "Manage dynamic plugins for Python applications"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "stevedore-5.2.0-py3-none-any.whl", hash = "sha256:1c15d95766ca0569cad14cb6272d4d31dae66b011a929d7c18219c176ea1b5c9"},
+    {file = "stevedore-5.2.0.tar.gz", hash = "sha256:46b93ca40e1114cea93d738a6c1e365396981bb6bb78c27045b7587c9473544d"},
+]
+
+[package.dependencies]
+pbr = ">=2.0.0,<2.1.0 || >2.1.0"
+
+[[package]]
 name = "tenacity"
 version = "8.2.3"
 description = "Retry code until it succeeds"
@@ -2399,4 +2448,4 @@ dev = ["black (>=19.3b0)", "pytest (>=4.6.2)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "ba86a6fc27cd750cdf352ab5d54f33e97c3e9763e7c1fe9e443892147d3d57c7"
+content-hash = "58d9273f517cc3d4e7476d02e879b668afc98bc896f641b3f4e99c0d54bbee09"

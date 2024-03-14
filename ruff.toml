@@ -2,6 +2,32 @@ target-version = "py310"
 line-length = 120
 
 [lint]
-select = ["B", "E", "F", "I", "ISC", "NPY", "PT", "PTH", "RUF", "UP"]
-unfixable = ["B"]
-ignore = ["ISC001"]
+select = [
+  "I",   # isort: Import sorting
+  "S",   # flake8-bandit: Security checks from Bandit
+  "B",   # flake8-bugbear: Finds likely bugs and design problems in your program
+  "PT",  # flake8-pytest-style: PyTest style checks
+  "DTZ", # flake8-datetimez: Checks for correct datetime usage
+  "ISC", # flake8-implicit-str-concat: Checks for implicitly concatenated strings in a list
+  "RET", # flake8-return: Checks return values
+  "PTH", # flake8-use-pathlib: Encourages the use of pathlib over os.path
+  "N",   # pep8-naming: Naming convention checks
+  "E",   # pycodestyle errors: Checks against PEP 8 errors
+  "F",   # Pyflakes: Checks for various errors
+  "UP",  # pyupgrade: Checks for older syntax versions and suggests upgrades
+  "NPY", # NumPy-specific rules
+  "PD",  # pandas-vet: Checks for pandas best practices and potential errors
+  "RUF", # Ruff-specific rules: Rules specific to Ruff
+]
+unfixable = [
+  "B", # Marking flake8-bugbear as unfixable, indicating that these warnings should be manually reviewed
+]
+ignore = [
+  "ISC001" # ruff recommends disabling the rule
+]
+
+[lint.per-file-ignores]
+"tests/*" = [
+  "S101", # Security check: assert statements
+  "S311", # Security check: random
+]
