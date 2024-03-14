@@ -1,14 +1,16 @@
 # PyShiny Dashboard Template
 
-This template offers a streamlined way to create and deploy Shiny applications using Python. It leverages `poetry` for dependency management and `playwright` for app testing, facilitating both local development and deployment on Posit Connect.
+Effortlessly create and deploy Shiny applications using Python with our PyShiny Dashboard Template.
+Designed for developers seeking a seamless transition from development to deployment, this template utilizes `poetry` for dependency management and `pytest`/`playwright` for comprehensive app testing.
+Ideal for projects aiming for high-quality code and efficient deployment on Posit Connect.
 
 ## Getting Started
 
 ### Using Devcontainer
 
-For a seamless development experience, we recommend using the provided [devcontainer](https://code.visualstudio.com/docs/remote/containers) configuration with Visual Studio Code. This setup encapsulates the development environment, ensuring consistency across machines.
+To ensure a consistent development experience across all environments, we recommend using the [devcontainer](https://code.visualstudio.com/docs/remote/containers) configuration with Visual Studio Code or DevPod for container-based development.
 
-1. **Start the Devcontainer**: Either use [DevPod](https://devpod.sh/) or open the project in VS Code, and when prompted, reopen it in a container. Alternatively, use the Command Palette (`Ctrl+Shift+P`) and select "Remote-Containers: Reopen in Container". Wait for the container to set up.
+1. **Start the Devcontainer**: Open the project in VS Code and select "Reopen in Container" when prompted, or use the Command Palette (`Ctrl+Shift+P`) and choose "Remote-Containers: Reopen in Container". Alternatively, use [DevPod](https://devpod.sh/) following their instructions.
 2. **Activate the virtual environment**:
    ```sh
    poetry shell
@@ -22,44 +24,66 @@ For a seamless development experience, we recommend using the provided [devconta
    poetry run pytest
    ```
 
-*Note*: The Devcontainer environment may limit the use of `playwright` browser features, such as `codegen`. For these features, consider setting up the project locally.
+*Note*: The Devcontainer might limit some `playwright` features, such as `codegen`. For full functionality, consider a local setup.
 
 ### Setting Up Locally with Poetry
 
-For local development without Devcontainer, follow these steps:
+For developers preferring a local setup without Devcontainer:
 
-1. **Install pipx**: [pipx](https://github.com/pypa/pipx) allows you installing CLI apps in isolated environments. This is how we want to install the `poetry`.
-1. **Install Poetry** using `pipx`:
+1. **Install pipx**: Ensure pipx is installed for managing isolated CLI apps.
+2. **Install Poetry**:
    ```sh
    pipx install poetry
    ```
-2. **Clone the repository** and navigate to the project directory.
-3. **Install dependencies**:
+3. **Clone the repository** and navigate to it.
+4. **Install dependencies**:
    ```sh
    poetry install
    playwright install
    ```
 
-*Attention*: The `playwright install` command may prompt additional steps. Follow the instructions provided in the terminal.
+*Attention*: Follow any additional steps prompted by `playwright install`.
 
 ### Deployment on Posit Connect
 
-Deploy your Shiny application to Posit Connect with the following steps:
+Deploy your application to Posit Connect by:
 
-1. **Export your Posit Connect API Key**:
+1. **Exporting your API Key**:
    ```sh
    export CONNECT_API_KEY="your_api_key_here"
    ```
-2. **Configure Posit Connect** with your server details:
+2. **Configuring Posit Connect**:
    ```sh
    rsconnect add \
    --api-key $CONNECT_API_KEY \
    --server <MY_CONNECT_URL> \
    --name <SERVER_NAME>
    ```
-3. **Deploy the application**:
+3. **Deploying**:
    ```sh
    rsconnect deploy shiny -t "PyShiny Template" .
    ```
 
-Replace placeholders (`<MY_CONNECT_URL>`, `<SERVER_NAME>`, and `your_api_key_here`) with your actual Posit Connect server URL, desired server name, and API key.
+Replace placeholders with your server URL, server name, and API key. Verify the deployment on Posit Connect for successful upload.
+
+## Features
+
+Our template ensures a streamlined development lifecycle, offering:
+
+- **Modular Package Structure**: Clean, maintainable code organization.
+- **Dependency Management with Poetry**: Easy handling and setup of virtual environments.
+- **Testing Frameworks**: `pytest` for unit tests and `playwright` with `pytest-playwright` for automated end-to-end testing.
+- **Consistent Devcontainer Setup**: Eliminates "works on my machine" issues.
+- **Code Quality Assurance**:
+  - `pre-commit` for clean commits.
+  - `ruff` for linting (`ruff check`) and formatting (`ruff format`).
+  - `pytest-cov` to monitor test coverage.
+  - `bandit` for security checks.
+- **Continuous Integration**: Automated checks via GitHub Actions.
+- **Structured Logging with Loguru**: Enhanced debugging and monitoring.
+- **Best Practice Configuration**: Using `pydantic-settings`.
+- **Efficient Deployment**: Smooth deployment to Posit Connect with `rsconnect`.
+
+## Community and Contributions
+
+We welcome contributions, feedback, and questions to improve this template. Please feel free to open an issue or submit a pull request on our GitHub repository.
