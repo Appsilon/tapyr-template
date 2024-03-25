@@ -1,5 +1,5 @@
 from pydantic_settings import BaseSettings
 
 
-class AppConfig(BaseSettings):
+class AppSettings(BaseSettings):
     log_level: str = "INFO"

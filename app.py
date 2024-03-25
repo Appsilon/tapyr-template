@@ -3,12 +3,12 @@ import sys
 from loguru import logger
 from shiny import App
 
-from pyshiny_template.config import AppConfig
-from pyshiny_template.shiny_modules.root import get_ui, server
+from pyshiny_template.settings import AppSettings
+from pyshiny_template.view.root import get_ui, server
 
-app_config = AppConfig()
+app_settings = AppSettings()
 logger.remove()
-logger.add(sys.stderr, level=app_config.log_level)
+logger.add(sys.stderr, level=app_settings.log_level)
 
 
 app_ui = get_ui()

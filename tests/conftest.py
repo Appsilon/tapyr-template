@@ -1,3 +1,5 @@
+from collections.abc import Generator
+
 import pytest
 from loguru import logger
 
@@ -13,7 +15,8 @@ class LogSink:
 
 
 @pytest.fixture()
-def loguru_sink():
+def loguru_sink() -> Generator[LogSink, None, None]:
+    """Fixture to capture log messages from loguru."""
     sink = LogSink()
     logger.remove()
     logger.add(sink)

@@ -1,4 +1,4 @@
-# PyShiny Dashboard Template
+# `tapyr` - PyShiny Dashboard Template
 
 Effortlessly create and deploy Shiny applications using Python with our PyShiny Dashboard Template.
 Designed for developers seeking a seamless transition from development to deployment, this template utilizes `poetry` for dependency management and `pytest`/`playwright` for comprehensive app testing.

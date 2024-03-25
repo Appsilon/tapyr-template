@@ -1,7 +1,7 @@
 import pytest
 
-from pyshiny_template.utils.utils import divide
-from tests.utils.test_helpers import log_contain_message
+from pyshiny_template.logic.utils import divide
+from tests.helpers.logging_helpers import log_contain_message
 
 
 def test_divide():
