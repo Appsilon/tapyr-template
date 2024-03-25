@@ -83,6 +83,7 @@ Our template ensures a streamlined development lifecycle, offering:
 - **Structured Logging with Loguru**: Enhanced debugging and monitoring.
 - **Best Practice Configuration**: Using `pydantic-settings`.
 - **Efficient Deployment**: Smooth deployment to Posit Connect with `rsconnect`.
+- **Static Type Checking with mypy**: Ensures type safety and code quality.
 
 ## Community and Contributions
 
