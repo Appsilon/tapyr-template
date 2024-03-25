@@ -12,7 +12,7 @@ jobs:
       - name: Checkout (GitHub)
         uses: actions/checkout@v4
 
-      - name: Build and run dev container tests
+      - name: Run quality checks
         uses: devcontainers/ci@v0.3
         with:
-          runCmd: ./run_tests_and_bandit.sh
+          runCmd: ./quality_checks.sh
