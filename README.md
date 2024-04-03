@@ -78,7 +78,6 @@ Our template ensures a streamlined development lifecycle, offering:
   - `pre-commit` for clean commits.
   - `ruff` for linting (`ruff check`) and formatting (`ruff format`).
   - `pytest-cov` to monitor test coverage.
-  - `bandit` for security checks.
 - **Continuous Integration**: Automated checks via GitHub Actions.
 - **Structured Logging with Loguru**: Enhanced debugging and monitoring.
 - **Best Practice Configuration**: Using `pydantic-settings`.
