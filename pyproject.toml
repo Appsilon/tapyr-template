@@ -39,3 +39,7 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.pytest.ini_options]
 addopts = "--cov . --cov-report=lcov:lcov.info --cov-report=term"
+filterwarnings = [
+    # This warning is caused by the `jupyter_client` package and is not relevant to us
+    "ignore:Jupyter is migrating its paths to use standard platformdirs.*:DeprecationWarning:jupyter_client.connect"
+]
