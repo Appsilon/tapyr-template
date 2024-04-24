@@ -8,7 +8,7 @@ def test_divide():
     # Given
     x = 2
     y = 2
-    expected = 1
+    expected = 1.0
     # When
     result = divide(x, y)
     # Then
