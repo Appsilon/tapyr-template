@@ -4,8 +4,8 @@ from pathlib import Path
 from loguru import logger
 from shiny import App, ui
 
-from pyshiny_template.settings import AppSettings
-from pyshiny_template.view.root import get_dashboard_ui, server
+from tapyr_template.settings import AppSettings
+from tapyr_template.view.root import get_dashboard_ui, server
 
 # Setup settings and logger
 app_settings = AppSettings()

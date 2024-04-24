@@ -8,4 +8,4 @@ echo "Running pytest for unit tests..."
 poetry run pytest
 
 echo "Running mypy for type checking..."
-poetry run mypy pyshiny_template
+poetry run mypy tapyr_template

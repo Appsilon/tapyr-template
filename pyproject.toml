@@ -1,13 +1,13 @@
 [tool.poetry]
-name = "pyshiny-template"
+name = "tapyr_template"
 version = "0.1.0"
 description = ""
 authors = ["Piotr Pasza Storozenko <piotr@appsilon.com>"]
 readme = "README.md"
-packages = [{include = "pyshiny_template"}]
+packages = [{include = "tapyr_template"}]
 
 [tool.coverage.run]
-source = ["pyshiny_template"]
+source = ["tapyr_template"]
 
 [tool.poetry.dependencies]
 python = "^3.10"
