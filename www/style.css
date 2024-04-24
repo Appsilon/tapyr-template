@@ -3,13 +3,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400;1,500&display=swap');
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Maven Pro', sans-serif;
   background-color: #f0f6ff;
   color: #333333;
 }
+
 h1 {
-  font-family: 'Maven Pro', sans-serif;
-  color: #333333;
-  font-size: 1.9rem;
+  font-size: 2rem;
+  margin-top: 1rem;
   font-weight: 600;
+}
+
+.docs-link {
+  text-decoration: none;
+  color: #fff;
+  background-color: #007bff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  display: inline-block;
 }

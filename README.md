@@ -1,16 +1,21 @@
-# `tapyr` - PyShiny Dashboard Template
+# Tapyr - Shiny for Python Application Template<a href="https://appsilon.github.io/tapyr-template/"><img src="www/images/tapyr.png" align="right" alt="Tapyr logo" style="height: 140px;"></a>
 
-This repo has been created before the docs has been released.
-The README will need to be adjusted to play nicely with the docs, be catchy and so on.
+> Create and deploy PyShiny dashboards with ease.
 
+# WIP: Not the final version of README.
 
----
+## Introduction
 
-Effortlessly create and deploy Shiny applications using Python with our PyShiny Dashboard Template.
-Designed for developers seeking a seamless transition from development to deployment, this template utilizes `poetry` for dependency management and `pytest`/`playwright` for comprehensive app testing.
+Tapyr is designed for data scientists and developers seeking a seamless transition from development to deployment, this template uses `poetry` for dependency management and `pytest`/`playwright` for comprehensive app validation/testing/quality assurance.
 Ideal for projects aiming for high-quality code and efficient deployment on Posit Connect.
 
+## Docs
+
+For comprehensive documentation, please visit our [documentation TODO](TODO).
+
 ## Getting Started
+
+Check out our get started with `tapyr` [blog post TODO](TOOD).
 
 ### Using Devcontainer
 
@@ -71,25 +76,3 @@ Deploy your application to Posit Connect by:
    ```
 
 Replace placeholders with your server URL, server name, and API key. Verify the deployment on Posit Connect for successful upload.
-
-## Features
-
-Our template ensures a streamlined development lifecycle, offering:
-
-- **Modular Package Structure**: Clean, maintainable code organization.
-- **Dependency Management with Poetry**: Easy handling and setup of virtual environments.
-- **Testing Frameworks**: `pytest` for unit tests and `playwright` with `pytest-playwright` for automated end-to-end testing.
-- **Consistent Devcontainer Setup**: Eliminates "works on my machine" issues.
-- **Code Quality Assurance**:
-  - `pre-commit` for clean commits.
-  - `ruff` for linting (`ruff check`) and formatting (`ruff format`).
-  - `pytest-cov` to monitor test coverage.
-- **Continuous Integration**: Automated checks via GitHub Actions.
-- **Structured Logging with Loguru**: Enhanced debugging and monitoring.
-- **Best Practice Configuration**: Using `pydantic-settings`.
-- **Efficient Deployment**: Smooth deployment to Posit Connect with `rsconnect`.
-- **Static Type Checking with mypy**: Ensures type safety and code quality.
-
-## Community and Contributions
-
-We welcome contributions, feedback, and questions to improve this template. Please feel free to open an issue or submit a pull request on our GitHub repository.
