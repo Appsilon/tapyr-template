@@ -11,7 +11,7 @@ source = ["tapyr_template"]
 
 [tool.poetry.dependencies]
 python = "^3.10"
-shiny = "^0.8.1"
+shiny = "^0.9.0"
 rich = "^13.7.1"
 loguru = "^0.7.2"
 pydantic-settings = "^2.2.1"
@@ -19,13 +19,13 @@ python-dotenv = "^1.0.1"
 
 [tool.poetry.group.dev.dependencies]
 icecream = "^2.1.3"  # For debugging, print() on steroids
-ipykernel = "^6.29.3"  # For running Jupyter notebooks in VS Code
+ipykernel = "^6.29.4"  # For running Jupyter notebooks in VS Code
 ipywidgets = "^8.1.2"  # For running Jupyter notebooks in VS Code
-pre-commit = "^3.6.2"
-ruff = "^0.3.5"
-rsconnect-python = "^1.22.0"
+pre-commit = "^3.7.0"
+ruff = "^0.4.1"
+rsconnect-python = "^1.23.0"
 pytest = "^8.1.1"
-playwright = "^1.42.0"
+playwright = "^1.43.0"
 pytest-playwright = "^0.4.4"
 requests = "^2.31.0"
 tenacity = "^8.2.3"
