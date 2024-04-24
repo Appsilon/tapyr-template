@@ -72,7 +72,7 @@ Deploy your application to Posit Connect by:
    ```
 3. **Deploying**:
    ```sh
-   rsconnect deploy shiny -t "PyShiny Template" .
+   rsconnect deploy shiny -t "Tapyr App" .
    ```
 
 Replace placeholders with your server URL, server name, and API key. Verify the deployment on Posit Connect for successful upload.

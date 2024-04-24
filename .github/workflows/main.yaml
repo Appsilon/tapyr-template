@@ -1,4 +1,4 @@
-name: 'Test PyShiny App'
+name: 'Validate Tapyr App'
 on:
   pull_request:
   push:
