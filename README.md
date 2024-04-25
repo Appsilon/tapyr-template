@@ -82,7 +82,7 @@ Replace placeholders with your server URL, server name, and API key. Verify the 
 Developed with :heart: at [Appsilon](https://appsilon.com).
 Get in touch: <opensource@appsilon.com>.
 
-Interested in staying up to date with Tapyr and other packages? Subscribe to [Shiny Weekly](https://go.appsilon.com/shiny-weekly?utm_source=community&utm_medium=github&utm_content=tapyr) and join our [community](https://go.appsilon.com/shiny4allcommunity). 
+Interested in staying up to date with Tapyr and other packages? Subscribe to [Shiny Weekly](https://go.appsilon.com/shiny-weekly?utm_source=community&utm_medium=github&utm_content=tapyr) and join our [community](https://go.appsilon.com/shiny4allcommunity).
 
 Explore the [Rhinoverse](https://rhinoverse.dev) - a family of R packages built around [Rhino](https://appsilon.github.io/rhino/)!
 
