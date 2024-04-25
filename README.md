@@ -1,6 +1,6 @@
 # Tapyr - Shiny for Python Application Template<a href="https://appsilon.github.io/tapyr-template/"><img src="www/images/tapyr.png" align="right" alt="Tapyr logo" style="height: 140px;"></a>
 
-> Create and deploy PyShiny dashboards with ease.
+> Create and deploy enterprise-ready PyShiny dashboards with ease.
 
 # WIP: Not the final version of README.
 
@@ -76,3 +76,19 @@ Deploy your application to Posit Connect by:
    ```
 
 Replace placeholders with your server URL, server name, and API key. Verify the deployment on Posit Connect for successful upload.
+
+---
+
+Developed with :heart: at [Appsilon](https://appsilon.com).
+Get in touch: <opensource@appsilon.com>.
+
+Interested in staying up to date with Tapyr and other packages? Subscribe to [Shiny Weekly](https://go.appsilon.com/shiny-weekly?utm_source=community&utm_medium=github&utm_content=tapyr) and join our [community](https://go.appsilon.com/shiny4allcommunity). 
+
+Explore the [Rhinoverse](https://rhinoverse.dev) - a family of R packages built around [Rhino](https://appsilon.github.io/rhino/)!
+
+Appsilon is a
+[**Posit (formerly RStudio) Full Service Certified Partner**](https://www.rstudio.com/certified-partners/).
+
+<a href="https://appsilon.com/careers/">
+  <img src="https://raw.githubusercontent.com/Appsilon/website-cdn/gh-pages/WeAreHiring1.png" alt="We are hiring!">
+</a>
