@@ -15,7 +15,7 @@ def get_dashboard_ui() -> ui.Tag:
                     ),
                     ui.a(
                         "Start with the docs!",
-                        href="https://tapyr.appsilon.com/",
+                        href="https://connect.appsilon.com/tapyr-docs/",
                         class_="docs-link",
                         data_testid="docs-link",
                     ),
