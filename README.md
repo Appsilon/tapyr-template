@@ -2,8 +2,6 @@
 
 > Create and deploy enterprise-ready PyShiny dashboards with ease.
 
-# WIP: Not the final version of README.
-
 ## Introduction
 
 Tapyr is designed for data scientists and developers seeking a seamless transition from development to deployment, this template uses `poetry` for dependency management and `pytest`/`playwright` for comprehensive app validation/testing/quality assurance.
@@ -15,7 +13,7 @@ For comprehensive documentation, please visit our [documentation TODO](TODO).
 
 ## Getting Started
 
-Check out our get started with `tapyr` [blog post TODO](TOOD).
+Check out our get started with `tapyr` [blog post](TOOD).
 
 ### Using Devcontainer
 
@@ -76,6 +74,12 @@ Deploy your application to Posit Connect by:
    ```
 
 Replace placeholders with your server URL, server name, and API key. Verify the deployment on Posit Connect for successful upload.
+
+## :star2: Stay Updated
+Don't miss out on important updates and exclusive content about Tapyr and PyShiny → [Subscribe to our newsletter](https://go.appsilon.com/shiny-weekly?utm_source=community&utm_medium=github&utm_content=tapyr).
+
+Have questions or want to contribute? Engage with Appsilon's developers and the data science community on our [Shiny 4 All](https://go.appsilon.com/shiny4allcommunity). 
+
 
 ---
 
