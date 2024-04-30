@@ -78,7 +78,7 @@ Replace placeholders with your server URL, server name, and API key. Verify the 
 ## :star2: Stay Updated
 Don't miss out on important updates and exclusive content about Tapyr and PyShiny → [Subscribe to our newsletter](https://go.appsilon.com/shiny-weekly?utm_source=community&utm_medium=github&utm_content=tapyr).
 
-Have questions or want to contribute? Engage with Appsilon's developers and the data science community on our [Shiny 4 All](https://go.appsilon.com/shiny4allcommunity). 
+Have questions or want to contribute? Engage with Appsilon's developers and the data science community on our [Shiny 4 All](https://go.appsilon.com/shiny4allcommunity).
 
 
 ---
