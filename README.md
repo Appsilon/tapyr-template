@@ -9,11 +9,11 @@ Ideal for projects aiming for high-quality code and efficient deployment on Posi
 
 ## Docs
 
-For comprehensive documentation, please visit our [documentation TODO](TODO).
+For comprehensive documentation, please visit our [documentation](https://connect.appsilon.com/tapyr-docs/).
 
 ## Getting Started
 
-Check out our get started with `tapyr` [blog post](TOOD).
+Check out our get started with `tapyr` [blog post](www.appsilon.com/post/introducing-tapyr).
 
 ### Using Devcontainer
 
