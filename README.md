@@ -7,6 +7,13 @@
 Tapyr is designed for data scientists and developers seeking a seamless transition from development to deployment, this template uses `poetry` for dependency management and `pytest`/`playwright` for comprehensive app validation/testing/quality assurance.
 Ideal for projects aiming for high-quality code and efficient deployment on Posit Connect.
 
+## Events
+### Upcoming
+Would you like to learn about Tapyr? Join our events!
+* [**Open Source Spotlight: Tapyr - Shiny for Python Framework**](https://go.appsilon.com/tapyr-webinar-may2024?utm_source=community&utm_medium=github&utm_campaign=shinygathering)<br>
+2024-05-28 at 18:00 (UTC+1)<br>
+Shiny Gathering led by [Piotr Storożenko](https://www.linkedin.com/in/piotr-pasza-storo%C5%BCenko/)
+
 ## Docs
 
 For comprehensive documentation, please visit our [documentation](https://connect.appsilon.com/tapyr-docs/).
