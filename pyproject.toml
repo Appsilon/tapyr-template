@@ -11,7 +11,7 @@ source = ["tapyr_template"]
 
 [tool.poetry.dependencies]
 python = "^3.10"
-shiny = "^0.10.0"
+shiny = "^1.0.0"
 rich = "^13.7.1"
 loguru = "^0.7.2"
 pydantic-settings = "^2.2.1"
