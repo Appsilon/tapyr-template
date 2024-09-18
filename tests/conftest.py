@@ -14,7 +14,7 @@ class LogSink:
         self.messages.append(message)
 
 
-@pytest.fixture()
+@pytest.fixture
 def loguru_sink() -> Generator[LogSink, None, None]:
     """Fixture to capture log messages from loguru."""
     sink = LogSink()
