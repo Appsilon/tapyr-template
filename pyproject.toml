@@ -29,9 +29,7 @@ dev-dependencies = [
     "pytest-cov>=5.0.0",
     "pytest-playwright>=0.5.2",
     "pytest-watch>=4.2.0",
-    "requests>=2.32.3",
     "ruff>=0.6.5",
-    "tenacity>=9.0.0",
 ]
 
 

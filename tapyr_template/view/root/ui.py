@@ -13,12 +13,7 @@ def get_dashboard_ui() -> ui.Tag:
                         " | PyShiny Template by ",
                         ui.span("Appsilon", style="color: #007bff; font-size: 3rem;"),
                     ),
-                    ui.a(
-                        "Start with the docs!",
-                        href="https://connect.appsilon.com/tapyr-docs/",
-                        class_="docs-link",
-                        data_testid="docs-link",
-                    ),
+                    ui.output_ui("footer"),
                     style="padding: 2rem;",
                 ),
                 ui.column(
