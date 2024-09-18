@@ -13,12 +13,12 @@ def test_startup2(page: Page, app: ShinyAppProc):
     assert not page.query_selector("#shiny-disconnected-overlay"), "The shiny app failed to start"
 
 
-def test_footer(page: Page, app: ShinyAppProc):
+def test_link_button(page: Page, app: ShinyAppProc):
     """
-    Test that the footer contains the link to the docs.
+    Test that the link_button contains the link to the docs.
     This is a simple test to show how to use the shiny testing api.
     And probably you want to remove/adjust for your own needs.
     """
     page.goto(app.url)
-    footer = controller.OutputUi(page, "footer")
-    footer.expect.to_contain_text("Start with the docs!")
+    link_button = controller.OutputUi(page, "link_button")
+    link_button.expect.to_contain_text("Start with the docs!")

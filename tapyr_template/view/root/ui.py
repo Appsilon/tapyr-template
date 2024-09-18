@@ -13,7 +13,7 @@ def get_dashboard_ui() -> ui.Tag:
                         " | PyShiny Template by ",
                         ui.span("Appsilon", style="color: #007bff; font-size: 3rem;"),
                     ),
-                    ui.output_ui("footer"),
+                    ui.output_ui("link_button"),
                     style="padding: 2rem;",
                 ),
                 ui.column(
