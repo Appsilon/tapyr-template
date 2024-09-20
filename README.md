@@ -1,10 +1,10 @@
 # Tapyr - Shiny for Python Application Template<a href="https://appsilon.github.io/tapyr-template/"><img src="www/images/tapyr.png" align="right" alt="Tapyr logo" style="height: 140px;"></a>
 
-> Create and deploy enterprise-ready PyShiny dashboards with ease.
+> Create and deploy enterprise-ready Shiny for Python dashboards with ease.
 
 ## Introduction
 
-Tapyr is designed for data scientists and developers seeking a seamless transition from development to deployment, this template uses `poetry` for dependency management and `pytest`/`playwright` for comprehensive app validation/testing/quality assurance.
+Tapyr is designed for data scientists and developers seeking a seamless transition from development to deployment, this template uses `uv` for dependency management and `pytest`/`playwright` for comprehensive app validation/testing/quality assurance.
 Ideal for projects aiming for high-quality code and efficient deployment on Posit Connect.
 
 ## Events
@@ -12,11 +12,11 @@ Ideal for projects aiming for high-quality code and efficient deployment on Posi
 Would you like to learn about Tapyr? Join our events!
 * [**Open Source Spotlight: Tapyr - Shiny for Python Framework**](https://go.appsilon.com/tapyr-webinar-may2024?utm_source=community&utm_medium=github&utm_campaign=shinygathering)<br>
 2024-05-28 at 18:00 (UTC+1)<br>
-Shiny Gathering led by [Piotr Storożenko](https://www.linkedin.com/in/piotr-pasza-storo%C5%BCenko/)
+Shiny Gathering led by [Piotr Pasza Storożenko](https://www.linkedin.com/in/piotr-pasza-storo%C5%BCenko/)
 
 ## Docs
 
-For comprehensive documentation, please visit our [documentation](https://connect.appsilon.com/tapyr-docs/).
+For comprehensive documentation, please visit our [documentation](https://appsilon.github.io/tapyr-docs/).
 
 ## Getting Started
 
@@ -29,7 +29,7 @@ To ensure a consistent development experience across all environments, we recomm
 1. **Start the Devcontainer**: Open the project in VS Code and select "Reopen in Container" when prompted, or use the Command Palette (`Ctrl+Shift+P`) and choose "Remote-Containers: Reopen in Container". Alternatively, use [DevPod](https://devpod.sh/) following their instructions.
 2. **Activate the virtual environment**:
    ```sh
-   poetry shell
+   source .venv/bin/activate
    ```
 3. **Run the application**:
    ```sh
@@ -37,25 +37,22 @@ To ensure a consistent development experience across all environments, we recomm
    ```
 4. **Execute tests**:
    ```sh
-   poetry run pytest
+   pytest
    ```
 
 *Note*: The Devcontainer might limit some `playwright` features, such as `codegen`. For full functionality, consider a local setup.
 
-### Setting Up Locally with Poetry
+### Setting Up Locally with `uv`
 
 For developers preferring a local setup without Devcontainer:
 
-1. **Install pipx**: Ensure pipx is installed for managing isolated CLI apps.
-2. **Install Poetry**:
+1. **Install `uv`**: [Follow the installation guide](https://docs.astral.sh/uv/getting-started/installation/).
+2. **Clone the repository** and navigate to it.
+3. **Install dependencies**:
    ```sh
-   pipx install poetry
-   ```
-3. **Clone the repository** and navigate to it.
-4. **Install dependencies**:
-   ```sh
-   poetry install
-   playwright install
+   uv sync
+   source .venv/bin/activate
+   playwright install --with-deps
    ```
 
 *Attention*: Follow any additional steps prompted by `playwright install`.
@@ -83,7 +80,7 @@ Deploy your application to Posit Connect by:
 Replace placeholders with your server URL, server name, and API key. Verify the deployment on Posit Connect for successful upload.
 
 ## :star2: Stay Updated
-Don't miss out on important updates and exclusive content about Tapyr and PyShiny → [Subscribe to our newsletter](https://go.appsilon.com/shiny-weekly?utm_source=community&utm_medium=github&utm_content=tapyr).
+Don't miss out on important updates and exclusive content about Tapyr and Shiny for Python → [Subscribe to our newsletter](https://go.appsilon.com/shiny-weekly?utm_source=community&utm_medium=github&utm_content=tapyr).
 
 Have questions or want to contribute? Engage with Appsilon's developers and the data science community on our [Shiny 4 All](https://go.appsilon.com/shiny4allcommunity).
 

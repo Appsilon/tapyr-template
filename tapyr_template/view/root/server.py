@@ -6,6 +6,6 @@ def server(input: Inputs, output: Outputs, session: Session):
     def link_button():
         return ui.a(
             "Start with the docs!",
-            href="https://connect.appsilon.com/tapyr-docs/",
+            href="https://appsilon.github.io/tapyr-docs/",
             class_="docs-link",
         )
