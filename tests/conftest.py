@@ -1,3 +1,6 @@
+# conftest.py files are always executed in pytest
+# https://stackoverflow.com/questions/34466027/what-is-conftest-py-for-in-pytest
+
 from collections.abc import Generator
 
 import pytest
