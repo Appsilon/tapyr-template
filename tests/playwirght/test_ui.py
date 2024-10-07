@@ -9,12 +9,23 @@ def test_startup(page: Page, app: ShinyAppProc):
     """
     page.goto(app.url)
 
-    # Wait for the page to load fully
+    # Shiny apps require this wait
     page.wait_for_load_state("networkidle")
 
     # When shiny fails after startup, it adds the #shiny-disconnected-overlay div
     # We check if it's not present in the page
     assert not page.query_selector("#shiny-disconnected-overlay"), "The shiny app failed to start"
+
+
+def test_startup_without_errors(page: Page, app: ShinyAppProc):
+    """
+    Tests if shiny app started without errors.
+    """
+    page.goto(app.url)
+
+    page.wait_for_load_state("networkidle")
+
+    assert not page.query_selector("div.shiny-output-error"), "The shiny app started with errors"
 
 
 def test_link_button(page: Page, app: ShinyAppProc):
