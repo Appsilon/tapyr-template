@@ -25,6 +25,7 @@ Check out our get started with `tapyr` [blog post](www.appsilon.com/post/introdu
 ### Using Devcontainer
 
 To ensure a consistent development experience across all environments, we recommend using the [devcontainer](https://code.visualstudio.com/docs/remote/containers) configuration with Visual Studio Code or DevPod for container-based development.
+If you prefer a local setup, follow the instructions below.
 
 1. **Start the Devcontainer**: Open the project in VS Code and select "Reopen in Container" when prompted, or use the Command Palette (`Ctrl+Shift+P`) and choose "Remote-Containers: Reopen in Container". Alternatively, use [DevPod](https://devpod.sh/) following their instructions.
 2. **Activate the virtual environment**:
@@ -51,11 +52,36 @@ For developers preferring a local setup without Devcontainer:
 3. **Install dependencies**:
    ```sh
    uv sync
-   source .venv/bin/activate
-   playwright install --with-deps
+   uv run playwright install --with-deps
+   ```
+4. **Run the application**:
+   ```sh
+   uv run shiny run app.py --reload
    ```
 
 *Attention*: Follow any additional steps prompted by `playwright install`.
+
+More information on `uv` can be found in the [official documentation](https://docs.astral.sh/uv/).
+
+### Setting Up Locally with `pip`
+
+Although not recommended, you can set up the project using `pip`:
+
+1. **Clone the repository** and navigate to it.
+2. **Create a virtual environment**:
+   ```sh
+   python -m venv .venv
+   source .venv/bin/activate
+   ```
+3. **Install package with dependencies**:
+   ```sh
+   pip install -e ."[dev]"
+   playwright install --with-deps
+   ```
+4. **Run the application**:
+   ```sh
+   shiny run app.py --reload
+   ```
 
 ### Deployment on Posit Connect
 
