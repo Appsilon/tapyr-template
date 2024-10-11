@@ -7,6 +7,10 @@
 Tapyr is designed for data scientists and developers seeking a seamless transition from development to deployment, this template uses `uv` for dependency management and `pytest`/`playwright` for comprehensive app validation/testing/quality assurance.
 Ideal for projects aiming for high-quality code and efficient deployment on Posit Connect.
 
+> [!IMPORTANT]
+> When we created `tapyr`, it used `poetry` for dependency management.
+> Please check our docs for [a quick `poetry` and `uv` comparison](https://appsilon.github.io/tapyr-docs/contents/tapyr_features/02_uv.html#direct-uv-and-poetry-comparison).
+
 ## Events
 ### Upcoming
 Would you like to learn about Tapyr? Join our events!
