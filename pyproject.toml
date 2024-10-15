@@ -1,6 +1,6 @@
 [project]
 name = "tapyr_template"
-version = "0.1.0"
+version = "0.2.0"
 description = ""
 authors = [{name = "Appsilon.com", email = "hello@appsilon.com"}]
 readme = "README.md"
@@ -29,7 +29,7 @@ dev-dependencies = [
     "pytest-cov>=5.0.0",
     "pytest-playwright>=0.5.2",
     "pytest-watch>=4.2.0",
-    "ruff>=0.6.5",
+    "ruff>=0.6.9",
 ]
 
 
