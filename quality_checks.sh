@@ -5,7 +5,7 @@
 set -e # Exit immediately if a command exits with a non-zero status.
 
 echo "Running pytest for unit tests..."
-poetry run pytest
+uv run pytest
 
 echo "Running pyright for type checking..."
-poetry run pyright tapyr_template
+uv run pyright tapyr_template
