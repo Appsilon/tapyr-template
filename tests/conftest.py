@@ -1,3 +1,6 @@
+# conftest.py files are always executed in pytest
+# https://stackoverflow.com/questions/34466027/what-is-conftest-py-for-in-pytest
+
 from collections.abc import Generator
 
 import pytest
@@ -14,7 +17,7 @@ class LogSink:
         self.messages.append(message)
 
 
-@pytest.fixture()
+@pytest.fixture
 def loguru_sink() -> Generator[LogSink, None, None]:
     """Fixture to capture log messages from loguru."""
     sink = LogSink()

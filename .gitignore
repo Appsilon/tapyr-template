@@ -1,5 +1,8 @@
+# Python files
 __pycache__
 .ipynb_checkpoints
+
+# MacOS
 .DS_Store
 
 # Code coverage
@@ -9,7 +12,5 @@ lcov.info
 # Results of playwright tests with tracing
 test-results/
 
-# Files from playwright installed with npm
+# Files packages installed with npm (if you use it)
 node_modules
-package-lock.json
-package.json
