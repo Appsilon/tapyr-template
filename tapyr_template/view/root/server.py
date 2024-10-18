@@ -11,5 +11,6 @@ def server(input: Inputs, output: Outputs, session: Session):
         return ui.a(
             "Start with the docs!",
             href="https://appsilon.github.io/tapyr-docs/",
+            target="_blank",
             class_="docs-link",
         )
