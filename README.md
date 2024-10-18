@@ -24,7 +24,7 @@ For comprehensive documentation, please visit our [documentation](https://appsil
 
 ## Getting Started
 
-Check out our get started with `tapyr` [blog post](www.appsilon.com/post/introducing-tapyr).
+Check out our get started with `tapyr` [blog post](https://www.appsilon.com/post/introducing-tapyr).
 
 ### Using Devcontainer
 
