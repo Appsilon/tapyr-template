@@ -31,7 +31,7 @@ Check out our get started with `tapyr` [blog post](www.appsilon.com/post/introdu
 To ensure a consistent development experience across all environments, we recommend using the [devcontainer](https://code.visualstudio.com/docs/remote/containers) configuration with Visual Studio Code or DevPod for container-based development.
 If you prefer a local setup, follow the instructions below.
 
-1. **Start the Devcontainer**: Open the project in VS Code and select "Reopen in Container" when prompted, or use the Command Palette (`Ctrl+Shift+P`) and choose "Remote-Containers: Reopen in Container". Alternatively, use [DevPod](https://devpod.sh/) following their instructions.
+1. **Start the Devcontainer**: Open the project in VS Code and select "Reopen in Container" when prompted, or use the Command Palette (`Ctrl+Shift+P`) and choose "Dev Containers: Reopen in Container". Alternatively, use [DevPod](https://devpod.sh/) following their instructions.
 2. **Activate the virtual environment**:
    ```sh
    source .venv/bin/activate
@@ -90,7 +90,10 @@ Although not recommended, you can set up the project using `pip`:
 ### Deployment on Posit Connect
 
 Deploy your application to Posit Connect by:
-
+0. **Activate the virtual environment**:
+   ```sh
+   source .venv/bin/activate
+   ```
 1. **Exporting your API Key**:
    ```sh
    export CONNECT_API_KEY="your_api_key_here"
