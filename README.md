@@ -11,13 +11,6 @@ Ideal for projects aiming for high-quality code and efficient deployment on Posi
 > When we created `tapyr`, it used `poetry` for dependency management.
 > Please check our docs for [a quick `poetry` and `uv` comparison](https://appsilon.github.io/tapyr-docs/contents/tapyr_features/02_uv.html#direct-uv-and-poetry-comparison).
 
-## Events
-### Upcoming
-Would you like to learn about Tapyr? Join our events!
-* [**Open Source Spotlight: Tapyr - Shiny for Python Framework**](https://go.appsilon.com/tapyr-webinar-may2024?utm_source=community&utm_medium=github&utm_campaign=shinygathering)<br>
-2024-05-28 at 18:00 (UTC+1)<br>
-Shiny Gathering led by [Piotr Pasza Storożenko](https://www.linkedin.com/in/piotr-pasza-storo%C5%BCenko/)
-
 ## Docs
 
 For comprehensive documentation, please visit our [documentation](https://appsilon.github.io/tapyr-docs/).
@@ -112,18 +105,10 @@ Deploy your application to Posit Connect by:
 
 Replace placeholders with your server URL, server name, and API key. Verify the deployment on Posit Connect for successful upload.
 
-## :star2: Stay Updated
-Don't miss out on important updates and exclusive content about Tapyr and Shiny for Python → [Subscribe to our newsletter](https://go.appsilon.com/shiny-weekly?utm_source=community&utm_medium=github&utm_content=tapyr).
-
-Have questions or want to contribute? Engage with Appsilon's developers and the data science community on our [Shiny 4 All](https://go.appsilon.com/shiny4allcommunity).
-
-
 ---
 
 Developed with :heart: at [Appsilon](https://appsilon.com).
 Get in touch: <opensource@appsilon.com>.
-
-Want to stay up to date with Tapyr and other packages? Join 4,2k explorers and get the [📧 Shiny Weekly Newsletter](https://go.appsilon.com/shiny-weekly?utm_source=community&utm_medium=github&utm_content=tapyr) into your mailbox and check our [Slack community](https://go.appsilon.com/shiny4allcommunity).
 
 Explore the [Rhinoverse](https://rhinoverse.dev) - a family of R packages built around [Rhino](https://appsilon.github.io/rhino/)!
 
